@@ -15,5 +15,15 @@ namespace Ejemplo_de_MVC2.Controllers
         {
             return View();
         }
+
+        public ActionResult condiciones() 
+        {
+            return View();
+        }
+
+        public ActionResult bucles()
+        {
+            return View();
+        }
     }
 }

@@ -13,3 +13,66 @@
     <label>Fecha larga actual: @DateTime.Now.ToLongDateString();</label><br/>
     <label>Adición de números: @(250+250);</label>
 </div>
+
+<head>
+    ...
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">...</div>
+    <div class="container body-content">
+        <br />
+        <br />
+        <br />
+        Nombre Usuario:
+        <input name="txtUserName" class="form-control" id="txtUserName" type="text" value="" />
+        <br />
+        Password:
+        <input name="Contrasena" class="form-control" id="Contrasena" type="password" value="" />
+        <br />
+        Genero:
+        <br />
+        
+        <input name="Genero" id="masculino" type="radio" checked="checked" value="Masculino" />
+        Masculino
+        <input name="Genero" id="femenino" type="radio" checked="checked" value="Femenino" />
+        Femenino
+        <br />
+        Address:
+        <textarea name="Direccion" class="form-control" id="idDireccion" rows="2" cols="20">Ingrese su dirección</textarea>
+        <br />
+        Pasatiempos:
+        
+        <input name="Hobbi" id="hobbi1" type="radio" checked="checked" value="hobbi1" />
+        Bailar
+        
+        <input name="Hobbi" id="hobbi2" type="radio" checked="checked" value="hobbi2" />
+        Correr
+        
+        <input name="Hobbi" id="hobbi3" type="radio" checked="checked" value="hobbi3" />
+        Escalar
+        
+        <input name="Hobbi" id="hobbi4" type="radio" checked="checked" value="hobbi4" />
+        Peliculas
+        <br />
+        
+        Seleccione:
+        <select name="ddlCurso" id="ddlCurso">
+            <option  value="">--Seleccionar curso--</option>
+            <option selected="selected">DWA</option>
+            <option>TW</option>
+            <option>MAT3</option>
+            <option>FIS1</option>
+        </select>
+        <br />
+        Conocimientos:
+        <br />
+        <select name="Seleccionar habilidades" id="Seleccionar_habilidades" multiple="multiple">
+            <option value="1">C#</option>
+            <option value="2">ASP .NET</option>
+            <option value="3">ASP .NET Core</option>
+            <option value="4">Azure</option>
+        </select>
+        <hr />
+        <footer>...</footer>
+    </div>
+</body>
