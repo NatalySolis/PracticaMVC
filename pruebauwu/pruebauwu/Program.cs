@@ -1,16 +1,7 @@
-using Ejemplo_de_MVC2.Models;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
-//Inyección por dependencia del string de conexión al contexto
-builder.Services.AddDbContext<usuariosContext>(options => options.UseSqlServer(
-    builder.Configuration.GetConnectionString("usuariosDbConnection"))
-);
 
 var app = builder.Build();
 
